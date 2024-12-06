@@ -1,0 +1,96 @@
+.location-section {
+  background-color: rgb(4, 4, 39);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+#find {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.location {
+  width: 1300px;
+  height: 500px;
+  margin-top: 4rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 1290px) {
+  .location {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .location {
+    left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .location {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 6rem;
+  }
+  #find {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .location {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left: 4rem;
+  }
+  #find {
+    font-size: 2.2rem;
+  }
+
+  .location-section {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .location {
+    left: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .location {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left: 1rem;
+  }
+  #find {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+  .location-section {
+    padding-bottom: 0rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .location {
+    width: 260px;
+    height: 400px;
+    position: relative;
+    left: 1rem;
+  }
+  #find {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+}

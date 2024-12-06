@@ -1,0 +1,370 @@
+.main-footer {
+  position: relative;
+  background-image: url("../../public/foo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.main-footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(24, 2, 44, 0.7);
+}
+
+.fot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  color: white;
+}
+
+.parts {
+  position: relative;
+  top: 4rem;
+  z-index: 1;
+  color: white;
+}
+#flog {
+  height: 50px;
+  width: 100px;
+  position: relative;
+  right: 4rem;
+}
+
+#lorem {
+  position: relative;
+  top: 30px;
+  right: 4rem;
+  line-height: 32px;
+  width: 500px;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.f-serch {
+  position: relative;
+  top: 3rem;
+  right: 4rem;
+  color: white;
+}
+
+.find-bar {
+  border-radius: 5px 0px 0px 5px;
+  height: 60px;
+  width: 300px;
+  padding: 30px;
+  border: none;
+  color: white;
+  outline: none;
+  background-color: rgb(26, 25, 45);
+}
+
+#subs-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(75, 75, 173);
+  color: white;
+  font-size: 21px;
+  position: relative;
+  top: 1.8px;
+  padding: 13px 20px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#subs-btn:hover {
+  background-color: rgb(100, 100, 199);
+}
+
+#copyright {
+  position: relative;
+  top: 9.5rem;
+  font-size: 1.2rem;
+}
+#hr {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.links-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-row-gap: 26px;
+  position: relative;
+  top: 2rem;
+  left: 15px;
+  font-weight: 800;
+  width: max-content;
+}
+
+.cont-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-row-gap: 26px;
+  position: relative;
+  top: 2rem;
+  left: 15px;
+  font-weight: 800;
+}
+.main-names {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.fields {
+  font-size: 1.2rem;
+}
+
+.fot-icons {
+  font-size: 27px;
+  margin-left: 7px;
+}
+#privacy {
+  position: relative;
+  top: 5rem;
+  font-size: 1.1rem;
+}
+
+#c-us {
+  position: relative;
+  left: 18px;
+}
+.contact-icons {
+  font-size: 1.5rem;
+  position: relative;
+  right: 10px;
+}
+@media only screen and (max-width: 1290px) {
+  .fot-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: max-content;
+  }
+
+  .main-footer {
+    height: 90rem;
+  }
+
+  .parts-f {
+    position: relative;
+    top: 18rem;
+    left: 6rem;
+  }
+
+  .parts-t {
+    position: relative;
+    top: 13rem;
+    left: 6rem;
+  }
+
+  .parts-two {
+    position: relative;
+    top: 9rem;
+    left: 6rem;
+  }
+
+  #privacy {
+    position: relative;
+    top: 1rem;
+    font-size: 1.1rem;
+    right: 20px;
+  }
+
+  #copyright {
+    position: relative;
+    top: 68rem;
+    left: 8rem;
+    font-size: 1.1rem;
+  }
+
+  #lorem {
+    position: relative;
+    top: 30px;
+    left: 3rem;
+    line-height: 32px;
+    width: 500px;
+    font-weight: 800;
+    font-size: 17px;
+  }
+
+  .f-serch {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  .find-bar {
+    height: 60px;
+    width: 300px;
+    padding: 30px;
+  }
+
+  #subs-btn {
+    font-size: 21px;
+    position: relative;
+    top: 1.8px;
+    padding: 13px 20px;
+  }
+
+  #flog {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 3rem;
+  }
+
+  #res {
+    position: relative;
+    left: 13px;
+  }
+
+  .main-names {
+    text-transform: uppercase;
+    font-size: 23px;
+    height: max-content;
+    width: max-content;
+  }
+  .fields {
+    width: max-content;
+    height: max-content;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #lorem {
+    position: relative;
+    top: 30px;
+    left: 2rem;
+    line-height: 32px;
+    width: 340px;
+    font-weight: 800;
+    font-size: 17px;
+  }
+
+  .f-serch {
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+    width: max-content;
+  }
+
+  .find-bar {
+    height: 10px;
+    width: 260px;
+    padding: 26.6px;
+  }
+  #subs-btn {
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    padding: 13px 8px;
+  }
+
+  .main-footer {
+    height: 93rem;
+  }
+
+  .parts-f {
+    position: relative;
+    top: 18rem;
+    left: 2rem;
+    width: max-content;
+  }
+
+  .parts-t {
+    position: relative;
+    top: 13rem;
+    left: 2rem;
+    width: max-content;
+  }
+
+  .parts-two {
+    position: relative;
+    top: 9rem;
+    left: 2rem;
+    width: max-content;
+  }
+  #privacy {
+    width: max-content;
+  }
+
+  #copyright {
+    width: max-content;
+    left: 4.7rem;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .find-bar {
+    height: 10px;
+    width: 200px;
+    padding: 26.6px;
+    position: relative;
+  }
+
+  #lorem {
+    position: relative;
+    top: 30px;
+    left: 1rem;
+    line-height: 32px;
+    width: 300px;
+    font-weight: 900;
+    font-size: 15px;
+  }
+
+  .parts-f {
+    position: relative;
+    top: 18rem;
+    left: 1rem;
+    width: max-content;
+  }
+
+  .parts-t {
+    position: relative;
+    top: 13rem;
+    left: 1rem;
+    width: max-content;
+  }
+
+  .parts-two {
+    position: relative;
+    top: 9rem;
+    left: 1rem;
+    width: max-content;
+  }
+
+  #copyright {
+    width: max-content;
+    left: 3.6rem;
+  }
+  #flog {
+    left: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .find-bar {
+    height: 10px;
+    width: 160px;
+    padding: 26.6px;
+  }
+
+  #lorem {
+    position: relative;
+    top: 30px;
+    left: 2rem;
+    line-height: 32px;
+    width: 260px;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .main-footer {
+    height: 95rem;
+  }
+}

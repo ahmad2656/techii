@@ -1,0 +1,363 @@
+.sec-four {
+  background-color: rgb(4, 4, 39);
+  padding-bottom: 11rem;
+}
+
+.four-Grid {
+  position: relative;
+  top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  color: white;
+}
+
+.four-class-two {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr;
+}
+
+#pic-four {
+  width: 650px;
+  height: 480px;
+  position: relative;
+  top: 9rem;
+  right: 4.5rem;
+  transition: transform 0.5s;
+}
+
+#pic-four:hover {
+  transform: rotate3d(1, 1, 1, 6deg) translateX(-20px);
+  cursor: pointer;
+}
+
+.four-class {
+  perspective: 8000px;
+}
+
+#cust-text {
+  font-size: 3rem;
+  position: relative;
+  top: 0.6rem;
+}
+
+.f-para {
+  color: wheat;
+  font-size: 23px;
+}
+
+.f-in {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.counter {
+  color: rgb(187, 187, 240);
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+.profession {
+  font-size: 1.9rem;
+}
+.ft-para {
+  font-size: 20px;
+  margin-top: 16px;
+  width: 450px;
+}
+
+.touch-Btn {
+  background-color: darkblue;
+  border-radius: 20px 0px 20px 0px;
+  color: white;
+  padding: 13px 40px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 2rem;
+}
+
+.touch-Btn:hover {
+  border: solid 0.3px white;
+  transition: 0.8s all;
+  transform: translateX(5px);
+  background-color: transparent;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1290px) {
+  .four-Grid {
+    position: relative;
+    top: 4%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .f-in {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 19rem;
+    width: max-content;
+    bottom: 7rem;
+  }
+
+  #pic-four {
+    width: 450px;
+    height: 350px;
+    position: relative;
+    top: 9rem;
+    left: 13rem;
+  }
+  #cust-text {
+    font-size: 2.4rem;
+    position: relative;
+    top: 14rem;
+    left: 15rem;
+    width: 480px;
+    height: max-content;
+  }
+  .f-para {
+    color: wheat;
+    font-size: 19px;
+    width: 500px;
+    position: relative;
+    left: 15rem;
+    top: 3rem;
+    height: max-content;
+  }
+
+  .ft-para {
+    font-size: 18px;
+    margin-top: 16px;
+    width: 350px;
+  }
+
+  .touch-Btn {
+    position: relative;
+    top: -4rem;
+    left: 19rem;
+    padding: 7px 30px;
+    font-size: 20px;
+  }
+  .sec-four {
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #cust-text {
+    font-size: 2rem;
+    position: relative;
+    top: 14rem;
+    left: 15rem;
+    width: 480px;
+    height: max-content;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .f-in {
+    left: 10rem;
+  }
+  #cust-text {
+    font-size: 2rem;
+    top: 14rem;
+    left: 8rem;
+    width: 430px;
+  }
+  .f-para {
+    left: 9rem;
+    font-size: 16px;
+    width: 370px;
+  }
+
+  .touch-Btn {
+    left: 10rem;
+    padding: 6px 20px;
+  }
+  #pic-four {
+    width: 450px;
+    height: 350px;
+    top: 9rem;
+    left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .f-in {
+    left: 12rem;
+  }
+
+  #cust-text {
+    font-size: 2rem;
+    top: 14rem;
+    left: 9rem;
+    width: 430px;
+  }
+  .f-para {
+    left: 10rem;
+    font-size: 16px;
+    width: 370px;
+  }
+  .touch-Btn {
+    left: 12rem;
+    padding: 6px 20px;
+  }
+
+  .counter {
+    color: rgb(187, 187, 240);
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+
+  .profession {
+    font-size: 1.6rem;
+  }
+
+  .ft-para {
+    font-size: 17px;
+    margin-top: 16px;
+    width: 270px;
+  }
+  #pic-four {
+    width: 450px;
+    height: 350px;
+    top: 9rem;
+    left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .f-in {
+    left: 4rem;
+    bottom: 3rem;
+  }
+
+  #cust-text {
+    font-size: 1.8rem;
+    top: 13rem;
+    left: 3rem;
+    width: 300px;
+  }
+
+  .touch-Btn {
+    left: 4rem;
+    padding: 6px 10px;
+    top: -1rem;
+  }
+
+  .counter {
+    color: rgb(187, 187, 240);
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+
+  .profession {
+    font-size: 1.6rem;
+  }
+
+  .ft-para {
+    font-size: 17px;
+    margin-top: 16px;
+    width: 270px;
+  }
+  #pic-four {
+    width: 350px;
+    height: 250px;
+    top: 8rem;
+    left: 1rem;
+  }
+
+  .f-para {
+    left: 3rem;
+    font-size: 17px;
+    width: 270px;
+  }
+  .sec-four {
+    padding-bottom: 7rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #pic-four {
+    width: 300px;
+    height: 200px;
+    top: 4.5rem;
+    left: 1rem;
+  }
+  #cust-text {
+    font-size: 1.6rem;
+    top: 8rem;
+    left: 2.7rem;
+    width: 270px;
+  }
+
+  .f-para {
+    left: 2.9rem;
+    font-size: 16px;
+    width: 260px;
+    top: 0.1rem;
+  }
+
+  .f-in {
+    left: 3.6rem;
+    bottom: 5rem;
+  }
+
+  .profession {
+    font-size: 1.4rem;
+  }
+  .counter {
+    font-size: 3.8rem;
+  }
+  .ft-para {
+    font-size: 15px;
+    margin-top: 16px;
+    width: 255px;
+  }
+  .touch-Btn {
+    left: 3.7rem;
+    padding: 6px 10px;
+    top: -3.6rem;
+  }
+  .sec-four {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .f-in {
+    left: 2rem;
+    bottom: 5rem;
+  }
+  #pic-four {
+    width: 240px;
+    height: 180px;
+    top: 4.5rem;
+    left: 20px;
+  }
+  #cust-text {
+    font-size: 1.6rem;
+    top: 8rem;
+    left: 1.5rem;
+    width: 270px;
+  }
+  .f-para {
+    left: 1.8rem;
+    font-size: 16px;
+    width: 260px;
+    top: 0.1rem;
+  }
+
+  .touch-Btn {
+    font-size: 18px;
+    left: 2rem;
+    padding: 5px 12px;
+    top: -3.6rem;
+  }
+}

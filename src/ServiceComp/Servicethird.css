@@ -1,0 +1,133 @@
+.touch-f {
+  position: relative;
+  background-image: url("../../public/touch.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.touch-f::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(1, 14, 42, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.touch-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+#touch-text {
+  position: relative;
+  color: white;
+  top: 15rem;
+  font-size: 3.5rem;
+}
+
+.touch-para {
+  position: relative;
+  color: white;
+  top: 16rem;
+  width: 550px;
+  font-size: 21px;
+}
+
+#touch-contact {
+  position: relative;
+  top: 19rem;
+  border: solid 2px white;
+  font-size: 1.3rem;
+  padding: 8px 30px;
+  border-radius: 20px 0px 20px 0px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  right: 4px;
+}
+
+#touch-contact:hover {
+  color: white;
+  background-color: blue;
+  transition: all 0.6s;
+  border: none;
+  cursor: pointer;
+}
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  #touch-text {
+    top: 15rem;
+    font-size: 3rem;
+  }
+  .touch-para {
+    top: 16rem;
+    width: 450px;
+    font-size: 17px;
+  }
+
+  #touch-contact {
+    top: 17rem;
+    font-size: 1rem;
+    padding: 6px 16px;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #touch-text {
+    font-size: 2rem;
+  }
+  .touch-para {
+    width: 400px;
+    font-size: 16px;
+  }
+
+  #touch-contact {
+    top: 17rem;
+    font-size: 1rem;
+    padding: 6px 16px;
+    left: 5px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #touch-text {
+    font-size: 2rem;
+  }
+  .touch-para {
+    width: 330px;
+    font-size: 15px;
+  }
+
+  #touch-contact {
+    top: 17rem;
+    font-size: 14px;
+    padding: 6px 16px;
+    left: -9px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #touch-text {
+    font-size: 1.7rem;
+  }
+  .touch-para {
+    width: 320px;
+    font-size: 14px;
+  }
+
+  #touch-contact {
+    top: 17rem;
+    font-size: 13px;
+    padding: 6px 16px;
+    left: 0px;
+  }
+}
+

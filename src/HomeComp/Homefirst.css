@@ -1,0 +1,211 @@
+.first-cont {
+  background-color: rgb(2, 2, 69);
+  padding-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.count-1 {
+  color: white;
+}
+
+#it {
+  position: relative;
+  top: 1.9rem;
+}
+
+#sol {
+  color: cornflowerblue;
+  text-decoration: underline dotted;
+  font-size: 3.7rem;
+}
+
+.t-two {
+  font-size: 3rem;
+  position: relative;
+  top: 2.3rem;
+}
+#p-one {
+  font-size: 20px;
+  width: 500px;
+  position: relative;
+  top: 2.7rem;
+}
+
+.social-it-icons {
+  font-size: 25px;
+  margin-left: 20px;
+  position: relative;
+  right: 1.3rem;
+}
+
+#start-btn {
+  background-color: transparent;
+  color: white;
+  position: relative;
+  top: 4rem;
+  border: solid 1px white;
+  border-radius: 0px 12px 0px 12px;
+  padding: 7px 25px;
+  font-size: 1.7rem;
+  outline: none;
+}
+#start-btn:hover {
+  border: none;
+  background-color: rgb(87, 87, 181);
+  transition: 0.6s all;
+  transform: translateX(7px);
+}
+
+#bulb-pic {
+  width: 700px;
+  height: 650px;
+  animation-name: bulb;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bulb {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@media only screen and (max-width: 1288px) {
+  .first-cont {
+    background-color: rgb(2, 2, 69);
+    padding-bottom: 17rem;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 0rem;
+    top: 5rem;
+    width: max-content;
+  }
+
+  #bulb-pic {
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 7rem;
+    right: 2rem;
+  }
+
+  #it {
+    font-size: 15px;
+    width: max-content;
+  }
+
+  .t-two {
+    font-size: 1.6rem;
+    width: 300px;
+  }
+  #p-one {
+    font-size: 14px;
+    width: 400px;
+  }
+  #start-btn {
+    padding: 7px 27px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #bulb-pic {
+    width: 300px;
+    height: 280px;
+    position: relative;
+    right: 2rem;
+  }
+
+  @keyframes bulb {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  #it {
+    font-size: 15px;
+    width: max-content;
+  }
+
+  .t-two {
+    font-size: 1.6rem;
+    width: 300px;
+  }
+  #p-one {
+    font-size: 14px;
+    width: 300px;
+  }
+  #sol {
+    font-size: 3.2rem;
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .grid {
+    width: 100%;
+  }
+
+  #bulb-pic {
+    right: 0.8rem;
+  }
+
+  #it {
+    position: relative;
+    left: 1rem;
+  }
+
+  .t-two {
+    position: relative;
+    left: 1rem;
+  }
+  #p-one {
+    position: relative;
+    left: 1rem;
+  }
+  #start-btn {
+    padding: 7px 22px;
+    font-size: 1.1rem;
+    position: relative;
+    left: 1.3rem;
+  }
+  .social-it-icons {
+    font-size: 23px;
+    margin-left: 20px;
+    position: relative;
+    right: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #it {
+    position: relative;
+    left: 0rem;
+  }
+
+  .t-two {
+    position: relative;
+    left: 0rem;
+  }
+  #p-one {
+    position: relative;
+    left: 0rem;
+  }
+}

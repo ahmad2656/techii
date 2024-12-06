@@ -1,0 +1,224 @@
+.plan-section {
+  background-color: rgb(4, 4, 39);
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20rem;
+  color: white;
+}
+
+#plan-btn {
+  background-color: rgb(62, 62, 154);
+  padding: 10px 35px;
+  font-size: 1.3rem;
+  border-radius: 10px 0px 10px 0px;
+  color: white;
+  border: none;
+  outline: none;
+  position: relative;
+  left: 10rem;
+  top: 3rem;
+}
+#plan-btn:hover {
+  border: solid 1px rgb(62, 62, 154);
+  background-color: transparent;
+  color: rgb(62, 62, 154);
+}
+
+#plan-btn:hover #plan-arrow {
+  transform: translateX(3px);
+  transition: 0.5s all;
+}
+
+#plan-arrow {
+  position: relative;
+  left: 12px;
+  font-size: 33px;
+}
+#afford-plan-text {
+  position: relative;
+  top: 6px;
+}
+.afford-plan-para {
+  position: relative;
+  top: 12px;
+  color: gray;
+}
+
+.plan-head {
+  color: rgb(117, 117, 212);
+  font-size: 20px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1290px) {
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #afford-plan-text {
+    top: 6px;
+    text-align: center;
+  }
+  .afford-plan-para {
+    top: 12px;
+    left: 14rem;
+    width: 500px;
+    text-align: center;
+  }
+  .plan-head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #plan-btn {
+    padding: 8px 25px;
+    font-size: 1.2rem;
+    left: 23rem;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #afford-plan-text {
+    top: 6px;
+    text-align: center;
+  }
+  .afford-plan-para {
+    top: 12px;
+    left: 7rem;
+    width: 500px;
+    text-align: center;
+  }
+  .plan-head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #plan-btn {
+    padding: 8px 25px;
+    font-size: 1.2rem;
+    left: 16rem;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .afford-plan-para {
+    top: 12px;
+    left: 6rem;
+    width: 500px;
+    text-align: center;
+  }
+  .plan-head {
+    font-size: 20px;
+    text-align: center;
+  }
+  #plan-btn {
+    padding: 6px 15px;
+    font-size: 1.2rem;
+    left: 17rem;
+    top: 2.5rem;
+  }
+  #plan-arrow {
+    position: relative;
+    left: 5px;
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .afford-plan-para {
+    top: 12px;
+    left: 1.2rem;
+    width: 350px;
+    text-align: center;
+  }
+  .plan-head {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    right: 1.4rem;
+  }
+  #plan-btn {
+    padding: 5px 12px;
+    font-size: 1rem;
+    left: 7rem;
+    top: 2.2rem;
+  }
+  #plan-arrow {
+    position: relative;
+    left: 3px;
+    font-size: 24px;
+  }
+  #afford-plan-text {
+    top: 6px;
+    right: 14px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .afford-plan-para {
+    top: 12px;
+    left: 8px;
+    width: 310px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .plan-head {
+    position: relative;
+    font-size: 17px;
+    text-align: center;
+    right: 1rem;
+  }
+  #plan-btn {
+    padding: 8px 10px;
+    font-size: 15px;
+    left: 6.2rem;
+    top: 1.6rem;
+  }
+  #plan-arrow {
+    position: relative;
+    left: 1px;
+    font-size: 23px;
+  }
+  #afford-plan-text {
+    top: 6px;
+    right: 3px;
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .afford-plan-para {
+    top: 12px;
+    left: 14px;
+    width: 260px;
+    text-align: center;
+  }
+  #afford-plan-text {
+    top: 6px;
+    width: 200px;
+    left: 2rem;
+    text-align: center;
+  }
+  #plan-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    left: 4.5rem;
+    top: 1.3rem;
+  }
+  #plan-arrow {
+    position: relative;
+    left: 3px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,155 @@
+.Box-2 {
+  background-color: rgb(4, 4, 39);
+}
+
+.g-two {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 70px;
+  margin-left: -4.2rem;
+}
+
+.cards {
+  color: white;
+  height: 360px;
+  width: 430px;
+  border-radius: 7px;
+  border: solid rgb(13, 13, 117) 1px;
+  background-color: transparent;
+  padding: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.cards::before {
+  content: "";
+  width: 9px;
+  height: 100%;
+  background-color: rgb(13, 13, 130);
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: -1;
+  transition: 0.6s all;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.cards:hover::before {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.cards:hover .c-icons {
+  color: white;
+  z-index: -1;
+}
+
+.cards:hover .read-btn {
+  color: white;
+}
+
+.fields-rt {
+  margin-left: 7px;
+  position: relative;
+  top: 9px;
+  font-size: 1.7rem;
+}
+
+.p-2 {
+  font-size: 17px;
+  margin-top: 17px;
+}
+
+.c-icons {
+  font-size: 5rem;
+  padding-bottom: 20px;
+  color: rgb(54, 54, 239);
+}
+
+.first-three {
+  margin-top: 9rem;
+}
+
+.last-three {
+  margin-top: 4rem;
+}
+
+.read-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(54, 54, 239);
+  font-size: 20px;
+  margin-left: 6px;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.read-btn:hover .arrow {
+  transition: 0.7s all;
+  transform: translateX(7px);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1288px) {
+  .g-two {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 18rem;
+    width: max-content;
+  }
+
+  .first-three {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .g-two {
+    left: 12rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .g-two {
+    left: 9rem;
+  }
+
+  .cards {
+    height: 395px;
+    width: 230px;
+  }
+
+  .p-2 {
+    font-size: 13px;
+  }
+
+  .c-icons {
+    font-size: 4rem;
+  }
+  #devel {
+    position: relative;
+    right: 2px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .g-two {
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .g-two {
+    left: 7rem;
+  }
+}

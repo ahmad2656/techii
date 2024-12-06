@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap");
+
+:root {
+  --maincolor: #29335c;
+  --whitecolor: white;
+  --redcolor: red;
+  --browncolor: brown;
+}
+
+header {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 15px 2.3rem;
+  background-color: rgb(2, 2, 69);
+  color: var(--whitecolor);
+}
+
+#logo {
+  transform: translateX(5rem);
+}
+nav {
+  margin-left: 5rem;
+}
+
+nav a {
+  margin: 0 2.4rem;
+  text-decoration: none;
+  color: var(--whitecolor);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#log-in {
+  border: none;
+  outline: none;
+  padding: 3px 34px;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: rgb(8, 8, 212);
+}
+
+#log-in:hover {
+  border: solid 0.5px white;
+  background-color: transparent;
+  transition: all 0.6s;
+  transform: scale(1.1);
+}
+
+header .nav-btn {
+  padding: 4px 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.3rem;
+}
+
+header .nav-btn:hover {
+  opacity: 0.7;
+}
+nav a.active {
+  color: white;
+}
+
+@media only screen and (max-width: 1288px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  nav {
+    margin-left: 0rem;
+  }
+
+  #log-in {
+    display: none;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 30%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgb(2, 2, 69);
+    transition: all 0.8s;
+    transform: translateX(-120vh);
+    border-bottom: 1px white solid;
+    border-right: 1px white solid;
+  }
+
+  header .responsive {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .page {
+    position: relative;
+    right: 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    height: 70%;
+    width: 35%;
+  }
+  #logo {
+    transform: translateX(2rem);
+  }
+
+  nav {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header nav {
+    height: 70%;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav a {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  nav a {
+    font-size: 22px;
+  }
+}

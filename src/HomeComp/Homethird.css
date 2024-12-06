@@ -1,0 +1,338 @@
+.third-section {
+  background-color: rgb(4, 4, 39);
+  padding-bottom: 11rem;
+}
+
+.third-grid {
+  position: relative;
+  top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  color: white;
+}
+#pic-three {
+  width: 720px;
+  height: 630px;
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+  transition: transform 0.5s;
+}
+#pic-three:hover {
+  transform: rotateX(-9deg) rotateY(-12deg);
+  /* transform: rotate3d(1, 1, 1, 10deg); */
+  cursor: pointer;
+}
+.two-main-pic {
+  perspective: 8000px;
+}
+
+.in-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  margin-top: 30px;
+}
+
+.in-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+}
+
+#trust-text {
+  font-size: 3rem;
+}
+
+.main-para {
+  color: wheat;
+  font-size: 20px;
+  margin-top: 1.6rem;
+}
+.third-iconss {
+  font-size: 65px;
+  margin-left: -14px;
+  padding: 7px;
+}
+
+.two-para {
+  font-size: 18px;
+}
+
+.tou-bt {
+  background-color: darkblue;
+  border-radius: 20px 0px 20px 0px;
+  color: white;
+  padding: 13px 40px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 2rem;
+}
+
+.tou-bt:hover {
+  border: solid 0.3px white;
+  transition: 0.8s all;
+  transform: translateX(5px);
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1290px) {
+  .third-grid {
+    top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .in-one {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .in-two {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  #pic-three {
+    width: 620px;
+    height: 550px;
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .third-section {
+    padding-bottom: 16rem;
+  }
+  .in-one {
+    position: relative;
+    left: 17rem;
+    width: max-content;
+  }
+
+  .in-two {
+    position: relative;
+    left: 17rem;
+    width: max-content;
+  }
+
+  #pic-three {
+    width: 560px;
+    height: 500px;
+    top: 7rem;
+    left: 8rem;
+  }
+
+  .two-para {
+    width: 300px;
+  }
+
+  #trust-text {
+    font-size: 2rem;
+    width: 400px;
+    position: relative;
+    left: 16rem;
+  }
+
+  .main-para {
+    font-size: 20px;
+    width: 480px;
+    position: relative;
+    left: 16rem;
+  }
+  .tou-bt {
+    padding: 7px 30px;
+    position: relative;
+    top: 2rem;
+  }
+  .in-one {
+    margin-top: 3rem;
+  }
+
+  .main-para {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .in-one {
+    left: 13rem;
+  }
+
+  .in-two {
+    left: 13rem;
+  }
+
+  #pic-three {
+    left: 5rem;
+  }
+
+  #trust-text {
+    left: 10rem;
+  }
+
+  .main-para {
+    left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .in-one {
+    left: 10rem;
+  }
+
+  .in-two {
+    left: 10rem;
+  }
+
+  #pic-three {
+    width: 560px;
+    height: 500px;
+    top: 7rem;
+    left: 3rem;
+  }
+
+  #trust-text {
+    font-size: 1.8rem;
+    width: 400px;
+    position: relative;
+    left: 10rem;
+  }
+
+  .main-para {
+    font-size: 18px;
+    width: 300px;
+    position: relative;
+    left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .tou-bt {
+    padding: 7px 18px;
+    position: relative;
+    top: 2rem;
+    font-size: 17px;
+  }
+  .in-one {
+    left: 4rem;
+  }
+
+  .in-two {
+    left: 4rem;
+  }
+
+  #pic-three {
+    width: 360px;
+    height: 330px;
+    top: 7rem;
+    left: 0.7rem;
+  }
+
+  #trust-text {
+    font-size: 1.8rem;
+    width: 300px;
+    position: relative;
+    left: 3rem;
+  }
+
+  .main-para {
+    font-size: 18px;
+    width: 300px;
+    position: relative;
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .in-one {
+    left: 2.7rem;
+  }
+
+  .in-two {
+    left: 2.7rem;
+  }
+
+  #trust-text {
+    left: 2rem;
+  }
+
+  .main-para {
+    left: 2rem;
+  }
+
+  .tou-bt {
+    padding: 7px 18px;
+    position: relative;
+    top: 2rem;
+    font-size: 17px;
+  }
+
+  .cl-names {
+    font-size: 23px;
+  }
+  .third-iconss {
+    font-size: 50px;
+  }
+
+  .two-para {
+    font-size: 16px;
+  }
+
+  #pic-three {
+    width: 320px;
+    height: 280px;
+    top: 6rem;
+    left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .in-one {
+    left: 2rem;
+  }
+
+  .in-two {
+    left: 2rem;
+  }
+
+  #pic-three {
+    width: 300px;
+    height: 280px;
+    left: 0rem;
+  }
+
+  #trust-text {
+    left: 0.4rem;
+    font-size: 1.4rem;
+  }
+
+  .main-para {
+    left: 1.6rem;
+    width: 240px;
+    font-size: 15px;
+  }
+
+  .two-para {
+    font-size: 15px;
+    width: 210px;
+  }
+  .cl-names {
+    font-size: 23px;
+  }
+  .third-iconss {
+    font-size: 40px;
+  }
+
+  .two-para {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,63 @@
+.f-portion {
+  background-color: rgb(77, 5, 82);
+  padding-bottom: 6rem;
+  padding-top: 13px;
+}
+
+.sliders {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#slidess {
+  height: 130px;
+  width: 200px;
+  position: relative;
+  top: 3rem;
+  border-radius: 20px;
+}
+#slidess:hover {
+  transform: translateY(-27px);
+  cursor: pointer;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media only screen and (max-width: 1290px) {
+  .sliders {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #slidess:hover {
+    transform: translateX(27px);
+    cursor: pointer;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #slidess {
+    height: 170px;
+    width: 250px;
+    position: relative;
+    top: 3rem;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #slidess {
+    height: 140px;
+    width: 200px;
+  }
+  #slidess:hover {
+    transform: translateX(22px);
+    cursor: pointer;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}

@@ -1,0 +1,172 @@
+.cards-count {
+  background-color: rgb(4, 4, 39);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+#office {
+  color: white;
+  text-align: center;
+  position: relative;
+  right: 23px;
+  font-size: 2.5rem;
+}
+.country-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 5.2rem;
+}
+.mulk-shapes {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: transparent;
+  border: solid 0.7px rgb(94, 94, 189);
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  z-index: 1;
+}
+
+.mulk-shapes::before {
+  content: "";
+  width: 9px;
+  height: 101%;
+  background-color: rgb(125, 125, 217);
+  position: absolute;
+  left: 12.3rem;
+  top: -12.6rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+  z-index: -1;
+  border-radius: 5px 0px 0px 3px;
+}
+
+.mulks {
+  font-size: 1.7rem;
+  padding: 35px;
+  position: relative;
+  top: 3px;
+}
+.mulks:after {
+  content: "";
+  position: absolute;
+  top: 4.7rem;
+  left: 2.3rem;
+  height: 3px;
+  background-color: rgb(125, 125, 217);
+  width: 73px;
+}
+.paras-mulks {
+  padding: 30px;
+  padding-top: 10px;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 17px;
+}
+
+.mails {
+  padding: 30px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 3.2rem;
+  left: 3px;
+}
+
+.calls {
+  padding: 30px;
+  padding-top: 0px;
+  position: relative;
+  bottom: 5rem;
+  left: 3px;
+}
+
+.Emailss {
+  font-size: 18px;
+}
+
+.phones {
+  font-size: 18px;
+}
+
+.m-ico {
+  font-size: 3rem;
+  padding: 5px;
+  position: relative;
+  right: 10px;
+  top: 11px;
+}
+
+.call-ico {
+  font-size: 3.2rem;
+  padding: 5px;
+  position: relative;
+  right: 10px;
+  top: 15px;
+}
+
+.akela-m {
+  position: relative;
+  left: 3rem;
+  bottom: 16px;
+}
+
+.akela-numb {
+  position: relative;
+  left: 3rem;
+  bottom: 16px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1290px) {
+  .country-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 5.2rem;
+    justify-items: center;
+  }
+  .mulk-shapes {
+    margin-top: 5rem;
+    position: relative;
+    right: 3px;
+    height: 400px;
+    width: 300px;
+  }
+  .first-cardd {
+    margin-top: 0rem;
+  }
+  .mulk-shapes::before {
+    width: 9px;
+    height: 77%;
+    left: 9rem;
+    top: -9.5rem;
+  }
+  .cards-count {
+    padding-bottom: 2rem;
+  }
+  #office {
+    right: 0px;
+    font-size: 2rem;
+  }
+  .paras-mulks {
+    padding: 30px;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .mulk-shapes {
+    height: 400px;
+    width: 286px;
+  }
+  .mulk-shapes::before {
+    width: 9px;
+    height: 74%;
+    left: 8.7rem;
+    top: -9.5rem;
+  }
+}

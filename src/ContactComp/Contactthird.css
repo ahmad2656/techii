@@ -1,0 +1,222 @@
+.forms-section {
+  background-color: rgb(4, 4, 39);
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+#any-ques {
+  text-align: center;
+  color: white;
+  font-size: 2.6rem;
+}
+
+.two-forms {
+  display: flex;
+  justify-content: space-around;
+}
+.first-forms {
+  width: 600px;
+  height: 50px;
+  position: relative;
+  right: 1.5rem;
+}
+
+.forms {
+  background-color: transparent;
+  color: white;
+  margin-top: 4rem;
+  padding: 30px;
+  border: solid 1px rgb(18, 18, 110);
+  font-size: 1.4rem;
+}
+
+.area-text {
+  background-color: transparent;
+  color: white;
+  margin-top: 4rem;
+  padding: 30px;
+  border: solid 1px rgb(18, 18, 110);
+  font-size: 1.3rem;
+}
+
+.second-form {
+  width: 1250px;
+  height: 50px;
+}
+
+#mes-btn {
+  background-color: rgb(107, 107, 187);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 0px 15px 0px 15px;
+  position: relative;
+  top: 3rem;
+}
+
+#mes-btn:hover {
+  background-color: transparent;
+  transition: 0.5s all;
+  cursor: pointer;
+  border: solid rgb(107, 107, 187) 1px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1290px) {
+  .two-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-forms {
+    width: 600px;
+    height: 50px;
+    position: relative;
+    right: 1.5rem;
+  }
+
+  .forms {
+    margin-top: 4rem;
+    padding: 30px;
+  }
+
+  .area-text {
+    width: 600px;
+    position: relative;
+    left: 9rem;
+  }
+  .second-form {
+    width: 600px;
+    height: 50px;
+    position: relative;
+    left: 9rem;
+  }
+  #any-ques {
+    font-size: 2rem;
+  }
+  #mes-btn {
+    padding: 12px 30px;
+    top: 3rem;
+    left: 9rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .area-text {
+    left: 1.8rem;
+  }
+  .second-form {
+    left: 1.8rem;
+  }
+  #mes-btn {
+    left: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .second-form {
+    left: 1.7rem;
+  }
+  .area-text {
+    width: 600px;
+    position: relative;
+    left: 1.7rem;
+  }
+  #mes-btn {
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .first-forms {
+    width: 350px;
+    height: 50px;
+    right: 8px;
+  }
+  .second-form {
+    width: 350px;
+    height: 50px;
+    left: 3rem;
+  }
+  .area-text {
+    width: 350px;
+    left: 3rem;
+  }
+  .forms {
+    padding: 27px;
+  }
+  #mes-btn {
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .second-form {
+    width: 330px;
+    left: 1rem;
+  }
+  .first-forms {
+    width: 330px;
+    right: 1.3rem;
+  }
+  .area-text {
+    width: 330px;
+    height: 500px;
+    left: 1rem;
+    padding: 20px;
+  }
+  #mes-btn {
+    padding: 10px;
+    top: 3rem;
+    left: 8px;
+  }
+  #any-ques {
+    font-size: 1.5rem;
+    position: relative;
+    right: 2px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .second-form {
+    width: 330px;
+    left: 2px;
+  }
+  .first-forms {
+    width: 330px;
+    right: 2px;
+  }
+  .area-text {
+    width: 330px;
+    height: 500px;
+    left: 2px;
+    padding: 20px;
+  }
+  #mes-btn {
+    padding: 10px;
+    top: 3rem;
+    left: 8px;
+  }
+  #any-ques {
+    font-size: 1.5rem;
+    position: relative;
+    right: 2px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .second-form {
+    width: 275px;
+    left: 2px;
+  }
+  .first-forms {
+    width: 275px;
+    right: 2px;
+  }
+  .area-text {
+    width: 275px;
+    left: 2px;
+  }
+}
